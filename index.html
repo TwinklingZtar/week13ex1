@@ -2,9 +2,11 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
     <title>DOM manipulation example</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./scripts/script.js" defer></script>
+    
 </head>
 
 <body>
@@ -13,20 +15,26 @@
         <button>Change Background Color</button>
     </header>
 
-    <section class="name_section">
+    <section>
+        <div class="name_section">
         <label class="first_name">First Name:</label>
         <input id="firstname" type="text">
         <label class="last_name">Last Name:</label>
         <input id="lastname" type="text">
         <label class="prog_name">Program Name:</label>
         <input id="progname" type="text">
+        </div>
+        <div class = "submit_button_div">
         <button class="submit_button">Submit</button>
+        </div>
     </section>
 
     <section>
         <h2>Enrolled students</h2>
+        <div class="lists">
         <ul>Sudents Enrolled in CIT</ul>
         <ul>Sudents Enrolled in CST</ul>
+        </div>
     </section>
 
 </body>
