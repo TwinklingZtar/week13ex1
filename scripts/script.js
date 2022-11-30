@@ -9,20 +9,26 @@ function buttonpress(event) {
         console.log(event.target.innerText)
         if (event.target.innerText === "Submit") {
             
-            infoArray.push({fname: firstname.value, lname: lastname.value, pname: progname.value})
-
-            firstname.value = ''
-            lastname.value = ''
-            progname.value = ''
-            console.log(infoArray)
-
+            submitHandler()
         }
         if (event.target.innerText === "Change Background Color") {
-            document.body.classList.toggle("background_color")
+            changeBG()
         }
 }
 
+function submitHandler(){
+    infoArray.push({fname: firstname.value, lname: lastname.value, pname: progname.value})
 
+    firstname.value = ''
+    lastname.value = ''
+    progname.value = ''
+    console.log(infoArray)
+
+}
+
+function changeBG() {
+    document.body.classList.toggle("background_color")
+}
 
 
 

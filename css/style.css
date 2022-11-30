@@ -66,11 +66,7 @@ label{
         display: flex;
         justify-content: space-around;
     }
-    label{
-        flex-shrink: 1;
-        flex-grow: 1;
 
-    }
 
 
 }
