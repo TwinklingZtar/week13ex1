@@ -1,3 +1,42 @@
 body {
     background-color: tan;
 }
+
+
+@media (min-width: 600px){
+    .name_section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 20px 20px 20px 40px;
+        margin: 20px;
+    }
+    #firstname{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        justify-content: center;
+    }
+    #lastname{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    #progname{
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    .first_name{
+        grid-row: 1/2;
+    }
+    .last_name{
+        grid-row: 2/3;
+    }
+    .prog_name{
+        grid-row: 3/4;
+    }
+    .submit_button{
+        grid-column: 1/3;
+        grid-row: 4/5;
+        margin: auto;
+        height: fit-content;
+        width: fit-content;
+    }
+}
